@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Archivo+Narrow|Righteous&display=swap" rel="stylesheet">
+<style>
+.b{    font-family: 'Righteous', ;    font-family: 'Archivo Narrow', ;    font-family: 'Bitter', ;
+    font-size: 50px;
+    text-align: center;
+}.a {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 30px;
+}.bd {
+  padding: 20px 0px 15px 17px ;
+  margin-top: 2%;}/* style the container */
+.container {
+  position: relative;
+  border-radius: 5px;
+  background-color: #F2F2F2
+;
+  padding: 40px;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 2%;
+}/* style inputs and link buttons */
+input,
+.btn {
+  width: 70%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  margin: 10px 15px;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 15px;
+  text-decoration: none; /* remove underline from anchors */
+}input:hover,
+.btn:hover {
+  opacity: 1;
+}/* add appropriate colors to fb, twitter and google buttons */
+.fb {
+  background-color: #3B5998
+;
+  color: white;
+  width: 300px;
+  height:40px;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  ;
+}.google {
+  background-color: #DD4B39
+;
+  color: white;
+  width:300px;
+  height:40px;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+}/* style the submit button */
+input[type=submit] {
+  background-color: #4CAF50
+;padding
+  color: white;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: 30px;
+}input[type=submit]:hover {
+  background-color: #45A049
+;
+}/* Two-column layout */
+.col {
+  float: left;
+  width: 50%;
+  margin: auto;
+  padding: 0 0px;
+  margin-top: 6px;
+}/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}/* hide some text on medium and large screens */
+.hide-md-lg {
+  display: none;
+}/* bottom container */
+.bottom-container {
+  text-align: center;
+  background-color: #666;
+  border-radius: 5px 5px 7px 4px;
+  width:760px;
+  margin-left: 380px;
+  margin-top: 2px;
+}/* Responsive layout - when the screen is less than 650px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 650px) {
+  .col {
+    width: 50%;
+    margin-top: 15px;  }
+  /* show the hidden text on small screens */
+  .hide-md-lg {
+    display: block;
+    text-align: center;
+  }
+}
+</style>
+</head>
+<body bgcolor="cadetblue">
+    <img class="img" src ="logo1.jpg" width="100px" style="border-radius: 50% 50%;">
+    <h2 class="b">Welcome to After12</h2><div class="container">
+  <form class="bd" action="/action_page.php">
+    <div class="row">
+      <h2 class="a">Login with Social Media or Manually</h2>
+      <div class="vl">
+      </div>      <div class="col">
+        <a href="#" class="fb btn">
+          <i class="fa fa-facebook fa-fw"></i>Log In with Facebook
+        </a>
+        <a href="#" class="google btn"><i class="fa fa-google fa-fw">
+          </i>Log In with Google+
+        </a>
+      </div>      <div class="col">
+        <div class="hide-md-lg">
+          <p>Or sign in manually:</p>
+        </div>        <input type="text" name="username" placeholder="Username" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <input type="button" onclick="window.location.href='homepage.html';" value="Login">
+      </div>    </div>
+  </form>
+</div><div class="bottom-container">
+  <div class="row">
+    <div class="col">
+      <a href="#" style="color:white" class="btn">Sign up</a>
+    </div>
+    <div class="col">
+      <a href="#" style="color:white" class="btn">Forgot password?</a>
+    </div>
+  </div>
+</div></body>
+</html>
